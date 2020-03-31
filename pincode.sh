@@ -2,7 +2,7 @@
 
 echo "Enter pin code:"
 read pincode
-pattern="[^a-zA-Z]|[0-9]{6}"
+pattern="[0-9]{6}[^a-zA-Z]"
 if [[ $pincode =~ $pattern ]]
 then
 	echo "valid pin code" 
